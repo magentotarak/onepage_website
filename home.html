@@ -1,0 +1,458 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+    <title>Document</title>
+</head>
+
+
+<style type="text/css">
+    .nextSlide {
+      background: #000;
+    }
+  
+    body {
+      background: #fff !important;
+    }
+  
+    .fade-6 .content {
+      background: #fff !important;
+    }
+  
+    .fade-6 .content h1 {
+      color: #000 !important;
+    }
+  
+    .site_wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+    }
+  
+    .site_container {
+      position: relative;
+      background: red;
+    }
+  
+    .wrap_box {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .wrap_box h1 {
+      font-family: 'robotoregular';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 33px;
+      text-align: center;
+      color: #000000;
+    }
+  
+    .wrap_box p {
+      font-family: 'robotoregular';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+    }
+  
+    .wrap_box .searchbar {
+      height: 48px;
+      width: 466px;
+      border: 1px solid #D0D0D0;
+      border-radius: 28px;
+      font-family: 'robotoregular';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+    }
+  
+    .wrap_box a.links {
+      font-family: 'robotoregular';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      text-decoration-line: underline;
+  
+    }
+  
+    .sitebutton {
+      display: inline-block;
+      padding: 16px 32px;
+      gap: 16px;
+      width: 244px;
+      height: 48px;
+      background: #E34444;
+      border-radius: 1000px;
+      font-family: 'robotoregular';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+  
+    .Progrssbar {
+      width: 221px;
+      height: 8px;
+      background: #E4E4E4;
+      border-radius: 1000px;
+      display: inline-block;
+    }
+  
+    .Progrssbar span {
+      width: 20%;
+      height: 100%;
+      background: #E34444;
+      border-radius: 1000px;
+      display: block;
+    }
+  
+    .case_wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 17px;
+    }
+  
+    .casebox {
+      width: 246px;
+      min-height: 160px;
+      border: 1px solid #BDBDBD;
+      border-radius: 9px;
+      padding: 24px 21px;
+    }
+  
+  
+    .casebox h2 {
+      font-family: 'robotomedium';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+    }
+  
+    .casebox p {
+      font-size: 12px;
+      font-family: 'robotoregular';
+      margin: 0px;
+    }
+  
+    .caseboxoutere {
+      min-height: 265px;
+      border-right: 1px solid #E4E4E4;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 50px;
+      flex-direction: column;
+    }
+  
+    .caseboxoutere:last-child {
+      border: none;
+    }
+  
+    .countbox input {
+      font-family: 'robotoregular';
+      border: 1px solid #000000;
+      border-radius: 28px;
+      width: 344px;
+      height: 44px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .amountbox input {
+      font-family: 'robotoregular';
+      border: 1px solid #000000;
+      border-radius: 28px;
+      width: 244px;
+      height: 44px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  .topwrapper{border-bottom: #E4E4E4 1px solid;
+    padding: 0px 35px;
+    margin-bottom: 40px;
+  }
+  .header_inner{
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0px;
+  }
+  .site_foooter{
+    border-top: #E4E4E4 1px solid;
+    text-align: center;
+    padding: 40px 0px;
+    padding-bottom: 18px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .site_foooter p{
+    font-family: 'robotoregular';
+    font-size: 12px;}
+  </style>
+  
+<body>
+    
+
+    
+  <div class="topwrapper">
+   
+   
+    
+      
+      
+    <div class="header_inner">
+    
+    
+      <div class="logopanel">
+        <a href="#">
+         <img src="./images/Fivetier_logo.png" alt="Logo"/>
+        </a>
+      </div>
+      
+      <div class="rightsection">
+        <a href="#"> <img src="./images/chaticon.png" alt="Chat"/></a>
+        <a href="#">  <img src="./images/globeicon.png" alt="Language"/></a>
+      </div>
+   
+   
+    </div>
+
+  </div>
+
+<div class="site_wrapper">
+
+
+
+  <div class="site_container contentare">
+
+
+    <!-- Section 1-->
+    <section class="slide fade-6 maincontentarea">
+      
+      <div class="content_sec">
+
+        <div class="container_box">
+          <div class="wrap_box">
+
+            <h1>Welcome to our Connected Media™ Campaign Builder</h1>
+            <div class="steps">
+              <div class="Progrssbar">
+                <span></span>
+              </div>
+            </div>
+
+
+            <p>Just one more step and you’ll be on your way! </p>
+
+            <div class="case_wrapper">
+
+              <div class="caseboxoutere">
+                <p>My goal is to</p>
+                <div class="casebox selectedcase">
+                  <h2>Increase Awareness</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
+                    metus nec fringilla accumsan.</p>
+
+                </div>
+              </div>
+
+              <div class="caseboxoutere">
+                <p>My reach is</p>
+                <div class="casebox selectedcase">
+                  <h2>Increase Awareness</h2>
+               
+                </div>
+              </div>
+
+              <div class="caseboxoutere">
+                <p>How much are you able to spend to reach your goal?</p>
+               
+                  <div class="amountbox">
+                    <input type="number" placeholder="$10,000,00"/>
+                  </div>
+                  <p>When would you like your campaign to start?</p>
+                  <div class="amountbox">
+                    <input type="date" placeholder="$10,000,00" value=""/>
+                  </div>
+               
+              </div>
+             
+
+
+
+
+
+            </div>
+
+            <div class="action_button">
+              <a href="#" class="sitebutton">Proceed to next step</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <section class="slide fade-6 maincontentarea">
+      <div class="content_sec">
+        <div class="container_box">
+          <div class="wrap_box">
+
+            <h1>Welcome to our Connected Media™ Campaign Builder</h1>
+            <div class="steps">
+              <div class="Progrssbar">
+                <span></span>
+              </div>
+            </div>
+
+
+            <p>We can help you with that!</p>
+
+            <div class="case_wrapper">
+
+              <div class="caseboxoutere">
+                <p>My goal is to</p>
+                <div class="casebox selectedcase">
+                  <h2>Increase Awareness</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
+                    metus nec fringilla accumsan.</p>
+
+                </div>
+              </div>
+              <div class="caseboxoutere">
+                <p>How many people are you trying to reach?</p>
+
+                <div class="countbox">
+                  <input type="number" placeholder="1,000,000" />
+                </div>
+                <a href="#" class="links">How can I calculate this number?</a>
+              </div>
+
+
+
+
+
+            </div>
+
+            <div class="action_button">
+              <a href="#" class="sitebutton">Proceed to next step</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="slide fade-6 maincontentarea">
+      <div class="content_sec">
+        <div class="container_box">
+          <div class="wrap_box">
+
+            <h1>Welcome to our Connected Media™ Campaign Builder</h1>
+            <div class="steps">
+              <div class="Progrssbar">
+                <span></span>
+              </div>
+            </div>
+
+
+            <p>What immediate goal are you trying to achieve with this program?</p>
+
+            <div class="case_wrapper">
+
+              <div class="casebox selectedcase">
+                <h2>Increase Awareness</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
+                  metus nec fringilla accumsan.</p>
+
+              </div>
+
+              <div class="casebox">
+                <h2>Drive Action</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
+                  metus nec fringilla accumsan.</p>
+
+              </div>
+
+
+              <div class="casebox">
+                <h2>Generate Leads</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
+                  metus nec fringilla accumsan.</p>
+
+              </div>
+
+            </div>
+
+            <div class="action_button">
+              <a href="#" class="sitebutton">Proceed to next step</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section 2-->
+    <section class="slide fade-6 maincontentarea">
+      <div class="content_sec">
+        <div class="container_box">
+          <div class="wrap_box">
+            <h1>Welcome to our Connected Media™ Campaign Builder</h1>
+            <p>Please start by entering the URL of your website:</p>
+            <div class="Searchbox">
+              <input type="text" placeholder="www.mywebsite.com" class="searchbar" />
+            </div>
+            <a href="#" class="links">Why do we need this information?</a>
+            <div class="action_button">
+              <a href="#" class="sitebutton">Proceed to next step</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="site_foooter">
+    <p>We build privacy that works for everyone. It’s a responsibility that comes with creating products and 
+      services that are free and accessible for all. <br/>
+      We look to these principles to guide our products, our processes, and our people in keeping our users’
+       data private, safe, and secure.</p>
+  
+  <p>Copyright © 2022 Five Tier, Inc. All Rights Reserved.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
